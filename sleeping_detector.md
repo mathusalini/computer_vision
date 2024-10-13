@@ -12,7 +12,6 @@ The diagram above visualizes how facial features such as eyes, nose, and mouth a
 - **Nose**: Helps in accurately positioning the face and recognizing facial orientation.
 - **Mouth**: Also plays a role in understanding the overall facial expression.
 
-```mermaid
 flowchart TD
     A[Load HaarCascade Face Algorithm] 
     A1[Load the pre-trained HaarCascade classifier for face detection (e.g., haarcascade_frontalface_default.xml).]
@@ -41,4 +40,5 @@ flowchart TD
     G[Display Output] 
     G1[Display the resulting frame with the drawn rectangle in a window (e.g., cv2.imshow('Face Detection', frame)).]
     G --> G1
+
 
