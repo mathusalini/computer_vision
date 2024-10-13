@@ -12,33 +12,7 @@ The diagram above visualizes how facial features such as eyes, nose, and mouth a
 - **Nose**: Helps in accurately positioning the face and recognizing facial orientation.
 - **Mouth**: Also plays a role in understanding the overall facial expression.
 
-flowchart TD
-    A[Load HaarCascade Face Algorithm] 
-    A1[Load the pre-trained HaarCascade classifier for face detection (e.g., haarcascade_frontalface_default.xml).]
-    A --> A1
-
-    B[Initialize Camera] 
-    B1[Access the camera using OpenCV (e.g., cv2.VideoCapture(0) to initialize webcam).]
-    B --> B1
-
-    C[Read Frames from Camera] 
-    C1[Continuously capture frames from the camera using a loop (e.g., ret, frame = cap.read()).]
-    C --> C1
-
-    D[Convert Color Image to Grayscale] 
-    D1[Convert the captured frame to grayscale for processing (e.g., gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)).]
-    D --> D1
-
-    E[Obtain Face Coordinates Using HaarCascade] 
-    E1[Use the loaded HaarCascade model to detect faces in the grayscale image (e.g., faces = face_cascade.detectMultiScale(gray, scaleFactor, minNeighbors)).]
-    E --> E1
-
-    F[Draw Rectangle on Face Coordinates] 
-    F1[For each detected face, draw a rectangle around it on the original color frame (e.g., cv2.rectangle(frame, (x, y), (x+w, y+h), color, thickness)).]
-    F --> F1
-
-    G[Display Output] 
-    G1[Display the resulting frame with the drawn rectangle in a window (e.g., cv2.imshow('Face Detection', frame)).]
-    G --> G1
+##Face Detection Workflow
+![flowchart](https://github.com/user-attachments/assets/db9b87c0-1c2f-4f1e-a84c-1c5fa540f877)
 
 
