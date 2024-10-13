@@ -87,7 +87,7 @@ cv2.destroyAllWindows()
 If we did this in Google Colab, the code will come like this.
 ![screenshot_code](https://github.com/user-attachments/assets/1fa5d988-43bb-45bc-93e8-b1059c3e0f07)
 
-after this webcam capture a image,then run the below code,
+webcam capture a image,then run the below code,
 
 ![Screenshot 2024-10-13 124938](https://github.com/user-attachments/assets/fd5e6f24-c4b5-4496-90e4-acbabbe853e8)
-We can detect whether it is sleeping or awake😊
+We can detect whether if anyone sleep😊
